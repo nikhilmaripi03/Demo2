@@ -11,5 +11,6 @@ tasks:
         image: nikhil
         push: true
         tags: ["${CI_COMMIT_SHA}", "latest"]
-        dockerfile: Dockerfil
+        dockerfile: Dockerfile
+        context: .
         
