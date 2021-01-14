@@ -9,7 +9,6 @@ tasks:
     - checkout
     - docker/build:
         image: nikhil
-        push: true
         tags: ["${CI_COMMIT_SHA}", "latest"]
         dockerfile: Dockerfile
         context: .
